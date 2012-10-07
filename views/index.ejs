@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+
+
+    <!-- TODO: Handle FOUC -->
+
+</head>
+<body>
+<div class="cal">
+
+    <div class="time">
+        <ul>
+            <li class="hour">
+                <em>9:00</em> AM
+            </li>
+            <li class="half">
+                9:30
+            </li>
+            <li class="hour">
+                <em>10:00</em> AM
+            </li>
+            <li class="half">
+                10:30
+            </li>
+            <li class="hour">
+                <em>11:00</em> AM
+            </li>
+            <li class="half">
+                11:30
+            </li>
+            <li class="hour">
+                <em>12:00</em> PM
+            </li>
+            <li class="half">
+                12:30
+            </li>
+            <li class="hour">
+                <em>1:00</em> PM
+            </li>
+            <li class="half">
+                1:30
+            </li>
+            <li class="hour">
+                <em>2:00</em> PM
+            </li>
+            <li class="half">
+                2:30
+            </li>
+            <li class="hour">
+                <em>3:00</em> PM
+            </li>
+            <li class="half">
+                3:30
+            </li>
+            <li class="hour">
+                <em>4:00</em> PM
+            </li>
+            <li class="half">
+                4:30
+            </li>
+            <li class="hour">
+                <em>5:00</em> PM
+            </li>
+            <li class="half">
+                5:30
+            </li>
+            <li class="hour">
+                <em>6:00</em> PM
+            </li>
+            <li class="half">
+                6:30
+            </li>
+            <li class="hour">
+                <em>7:00</em> PM
+            </li>
+            <li class="half">
+                7:30
+            </li>
+            <li class="hour">
+                <em>8:00</em> PM
+            </li>
+            <li class="half">
+                8:30
+            </li>
+            <li class="hour">
+                <em>9:00</em> PM
+            </li>
+        </ul>
+    </div>
+    <div class="events"></div>
+</div>
+
+</body>
+<footer>
+    <script src="/javascripts/jquery.js"></script>
+    <script src="/javascripts/underscore.js"></script>
+    <script src="/javascripts/main.js"></script>
+
+    <script type="text/template" id="tmpl-apt">
+        <div class="apt" title="start: <%= startTime %> end: <%= endTime %> length: <%= ln %>" style="top: <%= top %>%; left:<%= left %>%; width: <%= width %>%;height:<%= height %>%;">
+            <div class="name"><%= name %></div>
+            <%= loc %>
+        </div>
+    </script>
+</footer>
+</html>

@@ -1,0 +1,54 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.cal {
+  height: 46em;
+  width: 80em;
+}
+
+.events {
+  position: relative;
+  width: 85%;
+  margin: 2em;
+  background-color: #ececec;
+  height: 675px;
+  float: left;
+  .apt {
+    background-color: #ffffff;
+    position: absolute;
+    border: 1px solid #d6d6d6;
+    border-left: 3px solid #496dab;
+    padding: 3px;
+    overflow: hidden;
+    .name {
+      font-weight: bold;
+      color: blue;
+    }
+
+  //display: inline-block;
+  }
+}
+
+.time {
+  width: 10%;
+  float: left;
+  ul {
+    list-style-type: none;
+    li { //margin-top: .5em * @multiplier;
+      line-height: 2em;
+      text-align: right;
+      em {
+        font-weight: bold; //font-size: 1.2em;
+        font-style: normal;
+      }
+    }
+  }
+}
+
+
